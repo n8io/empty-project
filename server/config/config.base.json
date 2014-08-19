@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "empty-project",
+    "host": "0.0.0.0",
+    "port": 3000,
+    "cdnVendorRoot": "",
+    "cdnAppRoot": "",
+    "maxSockets": 25,
+    "express": {
+      "logFormat": "tiny"
+    }
+  },
+  "tracking": {
+    "google": {
+      "account": ""
+    }
+  },
+  "displayConfig": {
+    "enabled": false,
+    "key": ""
+  },
+  "session":{
+    "keys": []
+  },
+  "services":{
+    "defaultTimeout": 10000
+  },
+  "logging": {
+    "console": {
+      "enabled": true,
+      "level": "info"
+    },
+    "file": {
+      "enabled": false,
+      "level": "info",
+      "type": "rotating-file",
+      "path": "../logs/log.log",
+      "period": "1d",
+      "count": 3
+    },
+    "loggly": {
+      "enabled": false,
+      "secret": "",
+      "subdomain": ""
+    }
+  },
+  "__required": [
+    "app:name",
+    "app:host",
+    "app:port",
+    "app:maxSockets",
+    "session:keys",
+    "services:defaultTimeout",
+    "session:keys"
+  ]
+}

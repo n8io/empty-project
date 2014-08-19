@@ -1,0 +1,20 @@
+doctype html
+html(lang="en",data-ng-app='ngApp')
+  head
+    include ./master-partials/header-title
+    include ./master-partials/header-meta
+    include ./master-partials/header-stylesheets
+    include ./master-partials/header-scripts
+  body(data-ng-controller='Master_Controller')
+    .container-fluid
+      .row
+        h2
+          include ./master-partials/body-title
+          small
+            include ./master-partials/body-subtitle
+          hr
+        include ./master-partials/body-content
+    include ./master-partials/body-footer
+    include ./master-partials/body-modals
+    include ./master-partials/body-scripts
+    include ./master-partials/body-tracking

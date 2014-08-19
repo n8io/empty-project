@@ -1,0 +1,24 @@
+{
+  "app": {
+    "port": 80,
+    "express": {
+      "logFormat": "dev"
+    }
+  },
+  "displayConfig": {
+    "enabled": true,
+    "key": "f80e8b10-fc76-11e3-a3ac-0800200c9a66"
+  },
+  "logging": {
+    "console": {
+      "level": "debug"
+    },
+    "loggly": {
+      "secret": "1fbf8e54-1571-4d12-8310-1913e7925179",
+      "subdomain": "n8io"
+    }
+  },
+  "session":{
+    "keys": ["123234SUPERSECRET"]
+  }
+}
